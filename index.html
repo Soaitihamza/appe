@@ -1,0 +1,261 @@
+<html>
+	<head>
+		<title>Animals</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devic-width,initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			header{
+				height: 100px;
+				width: 100%;
+				background-image: linear-gradient(to right,gray,white);
+			}
+			#logobox{
+				width: 30%;
+				height: 100%;
+				float:right;
+				background-color:lightslategrey;
+			}
+			
+			#h1Header{
+				float: left;
+				line-height: 100px;
+				padding: 0 15px;
+				color: white;
+				
+			}
+			#logo{
+				height: 100%;
+				border-radius: 50%;
+			}
+			nav{
+				width: 70%;
+				text-align: center;
+			}
+			nav a{
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
+				display: inline-block;
+			}
+			nav li{
+				display: inline-block;
+				line-height: 100px;
+				width: 100px;
+				text-align: center;
+			}
+			nav a:hover{
+				background-color: white;
+				color: black;
+				height: 100%;
+				width:100%;
+			}
+			main{
+				width: 100%;
+				height: 450px;
+				background-color: bisque;
+				border-top: 3px white solid;
+				animation-name: changebackground;
+				animation-duration: 12s;
+				animation-iteration-count: infinite;
+				
+			}
+			aside{
+				width:30%;
+				height: 100%;
+				background-color: aliceblue;
+				text-align: center;
+				float: left;
+
+			}
+			aside img{
+				width: 90%;
+			}
+			#h1Aside{
+				padding: 20px 0;
+				border-bottom: gray 2px solid;
+			}
+			
+			#article{
+				width: 70%;
+				height: 450px;
+				float: right;
+				position: relative;
+			}
+			#box{
+				width: 400px;
+				height: 180px;
+				position: absolute;
+				background-color:brown;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				text-align: center;
+				padding: 15px;
+			}
+			#box h1{
+				border-bottom: white 2px solid;
+				padding: 15px 0;
+				color: cornsilk;
+			}
+			#box p{
+				font-family: 'Changa', sans-serif;
+				color: azure;
+			}
+			#contact-box{
+				width: 100%;
+				display: flex;
+				margin-top: 15px;
+				justify-content: center;
+
+			}
+			#contact-box img{
+				width: 45px;
+				border-bottom: 2px red solid;
+				padding-bottom: 10px;
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+			#contact-box img:hover{
+				width: 55px;
+				border-bottom: 2px gray solid;
+			}
+			footer{
+				clear: both;
+				width: 100%;
+				height: 600px;
+			}
+			table img{
+				width: 90%;
+				height: 300px;
+				text-align:center;
+			}
+			@keyframes changebackground{
+				0%{
+					background-color: white;
+				}
+				50%{
+					background-color: aqua;
+				}
+				100%{
+					background-color: blue;
+				}
+			}
+			@media only screen and (min-width:1017px) and (max-width:1070px){
+				#logobox{
+					width: 35%;
+				}
+				#article{
+					width: 65%;
+				}
+				aside{
+					width: 35%;
+				}
+			}
+			@media only screen and (max-width:1017px) and (min-width:767px){
+				#logobox{
+					width: 40%;
+				}
+			}
+			@media only screen and (max-width:767px){
+			
+				#logobox{
+					  width: 100%;
+					text-align: center;
+				     padding-left: 90px;
+					
+				}
+				nav{
+			       background-color:gray;
+			      width: 100%;
+				}
+				main{
+				margin-top: 20%;
+				}
+				#article{
+					width: 90%;
+				}
+				aside{
+					width:  100%
+				}
+			
+				
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<span id="logobox">
+				<h1 id="h1Header">ANIMAL</h1>
+				<img src="Rhino.jpg" id="logo">
+			</span>
+			<nav>
+				<ul>
+					<li>
+						<a href="https://unsplash.com/s/photos/predators"> الحيونات المفترسة</a>
+					</li>
+					<li>
+						<a href="https://unsplash.com/s/photos/pet">الحيونات الاليفة</a>
+					</li>
+					<li>
+						<a href="https://en.wikipedia.org/wiki/List_of_animal_sounds">اصوات الحيوانات</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<aside>
+			<a href="https://unsplash.com/s/photos/bear"><img src="bear.jpg"></a>
+				<h1 id="h1Aside">BEAR</h1>
+				<div id="contact-box">
+					<a href="https://www.facebook.com/2nimalworld"><img src="fb.svg"></a>
+					<a href="https://twitter.com/Animal_Word"><img src="twitter.svg"></a>
+					<a href="https://www.instagram.com/anim.alworldd/?hl=fr"><img src="instagram.svg"></a>
+
+               		</div>
+			</aside>
+			<article id="article">
+			<div id="box">
+				<h1> الحيوانات</h1>
+				<p>الحيوانات (الاسم العلمي: Animalia) وتسمى أيضًا باسم "المَتْزَوِيّات" (باللاتينية: metazoa) أي الحيوانات عديدة الخلايا. هي كائنات حقيقيات النوى ومتعددة الخلايا تشكل المملكة البيولوجية الحيوانية (باللاتينية: Animalia).</p>
+				</div>
+			</article>
+		</main>
+		<footer>
+			 <table style="text-align: center;">
+				 <tr>
+					 <td><img src="cheval.jpg"></td>
+					 <td><img src="vache.jpg"></td>
+				     <td><img src="chien.jpg"></td>
+				 </tr>
+				 <tr>
+					 <td>HORSER</td>
+					 <td>COW</td>
+					 <td>DOG</td>
+				 </tr>
+				 <tr>
+					 <td><img src="penguin.jpg"></td>
+					 <td><img src="cheval.jpg"></td>
+				     <td><img src="monky.jpg"></td>
+				 </tr>
+				 <tr>
+					 <td>PENGUIN</td>
+					 <td>HORSE</td>
+					 <td>MONKY</td>
+				
+				 </tr>
+			
+			</table>
+		
+		</footer>
+	</body>
+	
+</html>
